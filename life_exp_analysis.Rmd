@@ -13,3 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Here, I re-examine the analysis of Oeppen and Vaupel (2002).
 
+```{r}
+library(tidyverse)
+
+```
+
+#analysis
+
