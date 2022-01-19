@@ -25,11 +25,13 @@ data("gapminder_unfiltered")
 nrow(gapminder_unfiltered)
 ```
 ```{r}
+#finding max life expectancy each year and country.
 gapminder_unfiltered |>
   group_by(year) |>
   filter(lifeExp == max(lifeExp)) |>
   ungroup() |>
-  
+
+#saving year, country, and max life expectancy as new dataframe.
 select(year, country, lifeExp) ->
   sumdat
 
